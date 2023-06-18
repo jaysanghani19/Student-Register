@@ -1,10 +1,8 @@
-package com.example.studentregister.database
+package com.example.studentregister
 
-import android.os.Parcel
-import android.os.Parcelable
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.studentregister.MainActivityViewModel
+import com.example.studentregister.database.StudentDao
 
 class MainActivityViewModelProvieder(private val dao: StudentDao) : ViewModelProvider.Factory{
 
@@ -12,7 +10,7 @@ class MainActivityViewModelProvieder(private val dao: StudentDao) : ViewModelPro
         if (modelClass.isAssignableFrom(MainActivityViewModel::class.java)){
             return MainActivityViewModel(dao) as T
         }
-        throw IllegalArgumentException("No class found")
+        throw IllegalArgumentException("Illegal Class")
     }
 
 

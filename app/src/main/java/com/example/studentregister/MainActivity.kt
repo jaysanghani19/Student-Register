@@ -4,13 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.studentregister.R.id.buttonSave
-import com.example.studentregister.database.MainActivityViewModelProvieder
 import com.example.studentregister.database.Student
 import com.example.studentregister.database.StudentDataBase
 
